@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Principal">
+  <title>Principal</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/cambio-nombre.css">
+  <script src="../../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-current="page" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="principal.html" aria-current="page">Principal</a><a href="video.html">Vídeo</a><a href="usuario.html">Usuario</a><a href="cambio.html">Cambio de nombre</a><a href="final.html">Final</a></nav>
+  <main id="contenido" class="contenedor principal">
+
+    <div class="lienzo app">
+      <header>
+        <h1>Servicio centralizado de cambio de nombre</h1>
+        <p class="cita"><em>"Cambiar los nombres sin cambiar las cosas es lo primero con lo que se engaña al pueblo en todas las revoluciones"</em> Jacinto Benavente</p>
+      </header>
+      <hr>
+      <div class="nombre">
+        <img src="../../img/nombre-juan.svg" width="600" height="200" alt="El nombre Juan, con sus tres primeras letras como enlaces">
+        <a href="https://es.wikipedia.org/wiki/Juan" target="_blank" rel="noopener" title="J: Wikipedia, página del nombre"><span class="sr">Letra J: el nombre Juan en Wikipedia</span></a>
+        <a href="video.html" target="_blank" rel="noopener" title="u: vídeo de Juan de la Cierva"><span class="sr">Letra u: vídeo de YouTube</span></a>
+        <a href="usuario.html" target="_blank" rel="noopener" title="a: formulario de usuario"><span class="sr">Letra a: formulario de usuario</span></a>
+      </div>
+      <hr>
+      <footer>
+        <p class="pie-app">Consulta <a href="https://www.epdata.es/datos/nombres-apellidos-mas-frecuentes-espana-ine/373" target="_blank" rel="noopener">aquí</a> los nombres más comunes de España</p>
+      </footer>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+.formulario-pagina { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.6rem; align-items: start; }
+.rejilla-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 1rem; }
+.contador { align-self: flex-end; font-size: .85rem; color: var(--suave); }
+.lateral h2 { margin-top: 0; font-size: 1.25rem; }
+.lateral ul { padding-left: 1.1rem; margin: .5rem 0 0; }
+.lateral li { margin: .35rem 0; }
+@media (max-width: 860px) {
+  .formulario-pagina { grid-template-columns: 1fr; }
+  .rejilla-2 { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,43 @@
+.hero {
+  display: grid; grid-template-columns: 1.15fr .85fr; gap: 2.5rem; align-items: center;
+  padding-block: 2.2rem 2.8rem;
+}
+.hero h1 { font-size: clamp(2.2rem, 5.4vw, 4rem); margin: 0 0 1rem; letter-spacing: -.02em; }
+.hero h1 span { background: linear-gradient(transparent 60%, var(--resalta) 60%); padding-inline: .1em; }
+[data-tema="oscuro"] .hero h1 span { background: linear-gradient(transparent 60%, rgba(255, 217, 61, .45) 60%); }
+.hero p { font-size: 1.15rem; max-width: 52ch; color: var(--suave); margin: 0 0 1.6rem; }
+.hero__botones { display: flex; flex-wrap: wrap; gap: .9rem; }
+
+/* maqueta de una página: la estructura HTML dibujada con CSS */
+.maqueta {
+  display: grid; gap: .7rem; padding: 1rem; background: var(--tarjeta);
+  border: 2px solid var(--borde); border-radius: var(--radio); box-shadow: var(--sombra);
+  font-family: var(--fuente-codigo); font-size: .82rem; transform: rotate(1.6deg);
+  transition: transform .4s ease;
+}
+.maqueta:hover { transform: rotate(0); }
+.maqueta > div, .maqueta__medio > div {
+  border: 2px dashed var(--borde); border-radius: 8px; padding: .55rem .7rem; color: var(--texto);
+}
+.maqueta__cabecera { background: rgba(59, 108, 246, .16); }
+.maqueta__nav { background: rgba(255, 217, 61, .35); }
+.maqueta__medio { display: grid; grid-template-columns: 1.6fr 1fr; gap: .7rem; }
+.maqueta__main { min-height: 7rem; background: rgba(31, 166, 122, .16); }
+.maqueta__aside { background: rgba(255, 107, 87, .18); }
+.maqueta__pie { background: rgba(27, 42, 73, .12); }
+[data-tema="oscuro"] .maqueta__pie { background: rgba(255, 255, 255, .08); }
+
+.seccion-titulo { font-size: 1.7rem; margin: 2.4rem 0 1.2rem; }
+.destino { text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: .5rem; transition: transform .18s, box-shadow .18s; }
+.destino:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--borde); }
+.destino h3 { margin: 0; font-size: 1.3rem; }
+.destino p { margin: 0; color: var(--suave); font-size: .97rem; }
+.destino__etiqueta { align-self: flex-start; font-family: var(--fuente-codigo); font-size: .8rem; background: var(--resalta); color: #1b2a49; padding: .1rem .55rem; border-radius: 6px; }
+.tarjeta--lista ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+.tarjeta--lista li { margin: .2rem 0; }
+.tarjeta--lista a { font-weight: 600; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; gap: 2rem; }
+  .maqueta { transform: none; }
+}

@@ -1,0 +1,32 @@
+/* Ejercicios: listas, menús, bloques y texto en línea */
+.barra-titulo { background: #6dd8f5; border-radius: 8px; text-align: center; font: italic 700 .85rem Arial, Helvetica, sans-serif; padding: .3rem; margin: 0; color: #111; }
+.listas { font-size: .9rem; color: #12264a; }
+.listas ul, .listas ol { margin: .5rem 0 .8rem; padding-left: 2.2rem; }
+.listas ul { list-style: circle; }
+.listas ul ul { list-style: square; }
+.listas ol { list-style: decimal; }
+.listas ol ul { list-style: square; }
+.listas ol ol { list-style: lower-alpha; }
+.listas ol ol ol { list-style: lower-roman; }
+.listas hr { border: 0; border-top: 2px solid #777; margin: .8rem 0; }
+
+.menus { border: 1px solid #2f5fd0; font-family: "Times New Roman", Times, serif; background: #fff; }
+.menus h3 { font-size: 1.1rem; margin: .3rem .5rem; }
+.menus hr { border: 0; border-top: 2px solid #777; margin: .5rem 0; }
+.menus ul { list-style: none; margin: 0; padding: 0; }
+.menu-h { display: flex; flex-wrap: wrap; background: #858059; margin: .6rem 2.5rem .6rem .5rem !important; padding: .2rem .4rem !important; }
+.menu-h a { display: block; color: #fff; text-decoration: none; padding: .8rem .85rem; font-size: 1.25rem; transition: background-color .2s; }
+.menu-h a:hover { background: #6a6646; }
+.menu-v { width: 8rem; margin: .6rem .5rem; }
+.menu-v a { display: block; background: #70e83e; color: #fff; text-decoration: none; padding: 1rem .85rem; font-size: 1.25rem; transition: background-color .2s; }
+.menu-v a:hover, .menu-v .activo a { background: #ee1c1c; }
+
+.e3 { position: relative; padding: 2.2rem 1.4rem; background: #cfd3ee url("../../../img/circuito.svg") center / 240px repeat; border-left: 4px solid #000; }
+.bloque { background: rgba(112, 128, 144, .92); color: #fff; padding: 1rem 1.1rem .4rem; font-family: "Times New Roman", Times, serif; font-size: .85rem; }
+.bloque h2 { margin: 0 0 .7rem; font-size: 1.35rem; }
+.bloque p { margin: 0 0 .8rem; }
+.bloque-claro { background: rgba(235, 230, 160, .88); color: #111; padding: .7rem 1.1rem; margin-top: 2.2rem; font-family: "Times New Roman", Times, serif; font-size: .85rem; }
+.bloque-claro p { margin: 0; }
+.rosa { background: #ee82ee; }
+.negro { background: #000; color: #fff; font: 900 .95rem Arial, Helvetica, sans-serif; padding: 0 3px; }
+.cursiva { font: italic 400 .85rem Arial, Helvetica, sans-serif; }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Horario · Portafolio LMSGI">
+  <title>Horario · Portafolio LMSGI</title>
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/horario.css">
+  <script src="../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../index.html">Inicio</a></li><li><a href="../horario/horario.html" aria-current="page">Horario</a></li><li><a href="../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../tema1/formato-texto/ejercicio1.html" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Mi horario</span></h1><p>Distribución semanal de los módulos, con un color para cada uno.</p></section>
+<div class="tarjeta horario-envoltura"><table class="horario">
+<caption>Horario semanal</caption>
+<thead><tr><td class="vacio" style="border:0;background:none"></td><th scope="col">Lunes</th><th scope="col">Martes</th><th scope="col">Miércoles</th><th scope="col">Jueves</th><th scope="col">Viernes</th></tr></thead><tbody>
+<tr><th scope="row">8:30 – 9:25</th><td class="m-lm">Lenguajes de Marcas</td><td class="m-pr">Programación</td><td class="m-bd">Bases de Datos</td><td class="m-si">Sistemas Informáticos</td><td class="m-ed">Entornos de Desarrollo</td></tr>
+<tr><th scope="row">9:25 – 10:20</th><td class="m-lm">Lenguajes de Marcas</td><td class="m-pr">Programación</td><td class="m-bd">Bases de Datos</td><td class="m-si">Sistemas Informáticos</td><td class="m-ed">Entornos de Desarrollo</td></tr>
+<tr><th scope="row">10:20 – 11:15</th><td class="m-bd">Bases de Datos</td><td class="m-ed">Entornos de Desarrollo</td><td class="m-lm">Lenguajes de Marcas</td><td class="m-pr">Programación</td><td class="m-si">Sistemas Informáticos</td></tr>
+<tr><th scope="row">11:15 – 11:45</th><td class="recreo" colspan="5">RECREO</td></tr>
+<tr><th scope="row">11:45 – 12:40</th><td class="m-pr">Programación</td><td class="m-bd">Bases de Datos</td><td class="m-fol">FOL</td><td class="m-lm">Lenguajes de Marcas</td><td class="m-fol">FOL</td></tr>
+<tr><th scope="row">12:40 – 13:35</th><td class="m-si">Sistemas Informáticos</td><td class="m-fol">FOL</td><td class="m-ed">Entornos de Desarrollo</td><td class="m-bd">Bases de Datos</td><td class="m-pr">Programación</td></tr>
+<tr><th scope="row">13:35 – 14:30</th><td class="m-si">Sistemas Informáticos</td><td class="m-lm">Lenguajes de Marcas</td><td class="m-ed">Entornos de Desarrollo</td><td class="m-bd">Bases de Datos</td><td class="m-pr">Programación</td></tr>
+</tbody></table></div>
+<ul class="leyenda" aria-label="Leyenda de colores"><li><i class="m-lm"></i>Lenguajes de Marcas</li><li><i class="m-bd"></i>Bases de Datos</li><li><i class="m-pr"></i>Programación</li><li><i class="m-ed"></i>Entornos de Desarrollo</li><li><i class="m-si"></i>Sistemas Informáticos</li><li><i class="m-fol"></i>FOL</li></ul>
+<p class="nota-horario">Las horas y los módulos de esta tabla son un ejemplo: edita las filas de <code>horario.html</code> para ajustarlas a tu horario real.</p>
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../horario/horario.html">Horario</a></li>
+      <li><a href="../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

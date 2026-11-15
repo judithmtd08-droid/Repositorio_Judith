@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio 2 · Formato del texto">
+  <title>Ejercicio 2 · Formato del texto</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/formato-texto.css">
+  <script src="../../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-current="page" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="ejercicio1.html">Ejercicio 1</a><a href="ejercicio2.html" aria-current="page">Ejercicio 2</a><a href="ejercicio3.html">Ejercicio 3</a></nav>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Ejercicio 2: hipervínculos</span></h1><p>Marcador interno al capítulo 4, hipervínculo a Google e imagen de fondo.</p></section>
+
+    <div class="lienzo" style="padding:0">
+      <div class="e2" id="inicio-e2">
+        <h4>Esto es un encabezado h4 <sub>h2</sub></h4>
+        <a class="btn-amarillo" href="#cap4">Ir a capítulo 4:</a>
+        <pre>esto es un texto
+preformateado</pre>
+        <p class="linea-google">Este hipervínculo va a <sup>google</sup> <a class="btn-amarillo" href="https://www.google.com" target="_blank" rel="noopener">Ir a google:</a></p>
+        <section class="capitulo4" id="cap4">
+          <a href="#inicio-e2">hipervínculo en la misma página</a>
+          <h3>Esto es el Capítulo 4</h3>
+        </section>
+      </div>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

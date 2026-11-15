@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio 1 · Listas y bloques">
+  <title>Ejercicio 1 · Listas y bloques</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/listas-bloques.css">
+  <script src="../../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-current="page" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="ejercicio1.html" aria-current="page">Ejercicio 1</a><a href="ejercicio2.html">Ejercicio 2</a><a href="ejercicio3.html">Ejercicio 3</a></nav>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Ejercicio 1: listas</span></h1><p>Listas ordenadas y no ordenadas, con varios niveles de anidación.</p></section>
+
+    <div class="lienzo listas">
+      <h3 class="barra-titulo">lista no ordenada</h3>
+      <ul>
+        <li>opcion1</li>
+        <li>opcion2
+          <ul>
+            <li>opcion21</li>
+            <li>opcion22</li>
+          </ul>
+        </li>
+        <li>opcion3</li>
+        <li>opcion4</li>
+        <li>opcion5</li>
+      </ul>
+      <hr>
+      <h3 class="barra-titulo">lista ordenada</h3>
+      <ol>
+        <li>opcion1</li>
+        <li>opcion2
+          <ul>
+            <li>opcion21</li>
+            <li>opcion22</li>
+          </ul>
+        </li>
+        <li>opcion3</li>
+        <li>opcion4
+          <ol>
+            <li>opcion41
+              <ol>
+                <li>opcion411</li>
+                <li>opcion412</li>
+              </ol>
+            </li>
+            <li>opcion42</li>
+          </ol>
+        </li>
+        <li>opcion5</li>
+      </ol>
+      <hr>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

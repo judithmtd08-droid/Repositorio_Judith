@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Piedra, papel o tijera · Tema 3">
+  <title>Piedra, papel o tijera · Tema 3</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/juego.css">
+  <script src="../../js/site.js" defer></script>
+  <script src="js/juego.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-current="page" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="../calculadora/calculadora.html">Calculadora</a><a href="../piedra-papel-tijera/juego.html" aria-current="page">Piedra, papel o tijera</a></nav>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Piedra, papel o tijera</span></h1><p>Juega contra el ordenador. Gana quien lleve más rondas.</p></section>
+
+    <div class="juego">
+      <section class="marcador" aria-label="Marcador">
+        <div class="jugador"><strong id="p-jugador">0</strong><span>Tú</span></div>
+        <div><strong id="p-empates">0</strong><span>Empates</span></div>
+        <div class="maquina"><strong id="p-maquina">0</strong><span>Ordenador</span></div>
+      </section>
+
+      <section class="tarjeta mesa" aria-label="Ronda actual">
+        <div class="mano" id="mano-jugador"><span class="mano__emoji" id="emoji-jugador" aria-hidden="true">❔</span><span class="mano__nombre" id="nombre-jugador">Tu jugada</span></div>
+        <div class="versus" aria-hidden="true">VS</div>
+        <div class="mano" id="mano-maquina"><span class="mano__emoji" id="emoji-maquina" aria-hidden="true">❔</span><span class="mano__nombre" id="nombre-maquina">Ordenador</span></div>
+        <p class="resultado" id="resultado" role="status" aria-live="polite">Elige una opción para empezar</p>
+      </section>
+
+      <section aria-label="Elige tu jugada">
+        <div class="elecciones" id="elecciones">
+          <button class="eleccion" type="button" data-eleccion="piedra"><span class="eleccion__emoji" aria-hidden="true">✊</span><span class="eleccion__texto">Piedra</span><kbd>tecla 1</kbd></button>
+          <button class="eleccion" type="button" data-eleccion="papel"><span class="eleccion__emoji" aria-hidden="true">✋</span><span class="eleccion__texto">Papel</span><kbd>tecla 2</kbd></button>
+          <button class="eleccion" type="button" data-eleccion="tijera"><span class="eleccion__emoji" aria-hidden="true">✌️</span><span class="eleccion__texto">Tijera</span><kbd>tecla 3</kbd></button>
+        </div>
+      </section>
+
+      <section class="tarjeta ronda-extra" aria-label="Historial y reinicio">
+        <div>
+          <p class="reglas">La piedra rompe la tijera, la tijera corta el papel y el papel envuelve la piedra.</p>
+          <ul class="historial-ppt" id="historial" aria-label="Últimas rondas"></ul>
+        </div>
+        <button class="boton boton--claro" type="button" id="reiniciar">Reiniciar marcador</button>
+      </section>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span>Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

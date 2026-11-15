@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario · Portafolio LMSGI">
+  <title>Formulario · Portafolio LMSGI</title>
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="css/formulario.css">
+  <script src="../js/site.js" defer></script>
+  <script src="js/formulario.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../index.html">Inicio</a></li><li><a href="../horario/horario.html">Horario</a></li><li><a href="../formulario/formulario.html" aria-current="page">Formulario</a></li><li class="tiene-sub"><a href="../tema1/formato-texto/ejercicio1.html" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Formulario de inscripción</span></h1><p>Completa tus datos. Los campos obligatorios se validan antes de enviar.</p></section>
+
+    <div class="formulario-pagina">
+      <form class="tarjeta formulario" id="inscripcion" action="#" method="get" novalidate>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div class="rejilla-2">
+            <div class="campo"><label class="requerido" for="nombre">Nombre</label><input type="text" id="nombre" name="nombre" autocomplete="given-name" required></div>
+            <div class="campo"><label class="requerido" for="apellidos">Apellidos</label><input type="text" id="apellidos" name="apellidos" autocomplete="family-name" required></div>
+            <div class="campo"><label class="requerido" for="email">Correo electrónico</label><input type="email" id="email" name="email" autocomplete="email" required></div>
+            <div class="campo"><label for="telefono">Teléfono</label><input type="tel" id="telefono" name="telefono" autocomplete="tel" pattern="[0-9 +]{9,15}" placeholder="600 000 000"></div>
+          </div>
+          <div class="campo"><label class="requerido" for="nacimiento">Fecha de nacimiento</label><input type="date" id="nacimiento" name="nacimiento" required></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Estudios</legend>
+          <div class="campo">
+            <label for="curso">Curso</label>
+            <select id="curso" name="curso">
+              <option value="1">1.º curso</option>
+              <option value="2">2.º curso</option>
+            </select>
+          </div>
+          <div class="campo">
+            <span id="etq-modulos">Módulos que te interesan</span>
+            <div class="opciones" role="group" aria-labelledby="etq-modulos">
+              <label><input type="checkbox" name="modulo" value="lm" checked> Lenguajes de Marcas</label>
+              <label><input type="checkbox" name="modulo" value="bd"> Bases de Datos</label>
+              <label><input type="checkbox" name="modulo" value="pr"> Programación</label>
+            </div>
+          </div>
+          <div class="campo">
+            <span id="etq-modalidad">Modalidad</span>
+            <div class="opciones" role="radiogroup" aria-labelledby="etq-modalidad">
+              <label><input type="radio" name="modalidad" value="presencial" checked> Presencial</label>
+              <label><input type="radio" name="modalidad" value="distancia"> A distancia</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="campo">
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" name="comentarios" rows="4" maxlength="300" placeholder="Cuéntanos algo más..."></textarea>
+          <span class="contador" id="contador" aria-live="polite">0 / 300</span>
+        </div>
+        <div class="campo"><label class="opciones"><input type="checkbox" name="privacidad" required> Acepto las condiciones de uso</label></div>
+
+        <div class="acciones">
+          <button class="boton" type="submit">Enviar inscripción</button>
+          <button class="boton boton--claro" type="reset">Restablecer</button>
+        </div>
+        <p class="mensaje-ok" id="mensaje" role="status" hidden></p>
+      </form>
+
+      <aside class="tarjeta lateral">
+        <h2>Antes de enviar</h2>
+        <ul>
+          <li>Los campos marcados con * son obligatorios.</li>
+          <li>El teléfono admite números, espacios y el signo +.</li>
+          <li>Este formulario es una práctica: los datos no se envían a ningún servidor.</li>
+        </ul>
+      </aside>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../horario/horario.html">Horario</a></li>
+      <li><a href="../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

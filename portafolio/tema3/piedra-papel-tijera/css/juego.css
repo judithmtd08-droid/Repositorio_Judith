@@ -1,0 +1,40 @@
+/* Tema 3: piedra, papel o tijera */
+.juego { display: grid; gap: 1.6rem; max-width: 880px; margin-inline: auto; }
+.marcador { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; text-align: center; }
+.marcador div { background: var(--tarjeta); border: 2px solid var(--borde); border-radius: 12px; padding: .8rem .4rem; box-shadow: 4px 4px 0 var(--borde); }
+.marcador strong { display: block; font-family: var(--fuente-titulo); font-size: 2.3rem; line-height: 1.1; }
+.marcador span { font-size: .95rem; color: var(--suave); font-weight: 600; }
+.marcador .jugador strong { color: var(--menta); }
+.marcador .maquina strong { color: var(--coral); }
+
+.mesa { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 1rem; text-align: center; padding: 1.4rem 1rem; }
+.mano { display: grid; gap: .3rem; justify-items: center; }
+.mano__emoji { font-size: clamp(3.5rem, 12vw, 6rem); line-height: 1; display: block; min-height: 1.2em; }
+.mano__nombre { font-weight: 700; color: var(--suave); }
+.versus { font-family: var(--fuente-titulo); font-weight: 800; font-size: 1.4rem; color: var(--suave); }
+.mano--sacude .mano__emoji { animation: sacude .35s ease-in-out infinite; }
+@keyframes sacude { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-14px) rotate(-12deg); } }
+.resultado { grid-column: 1 / -1; margin: .6rem 0 0; font-family: var(--fuente-titulo); font-size: clamp(1.4rem, 4vw, 2rem); font-weight: 800; min-height: 2.4rem; }
+.resultado--gana { color: var(--menta); }
+.resultado--pierde { color: var(--coral); }
+.resultado--empate { color: var(--suave); }
+
+.elecciones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.eleccion { font: inherit; cursor: pointer; display: grid; gap: .2rem; justify-items: center; padding: 1.1rem .5rem; background: var(--tarjeta); color: var(--texto); border: 2px solid var(--borde); border-radius: 16px; box-shadow: 5px 5px 0 var(--borde); transition: transform .15s, box-shadow .15s, background-color .15s; }
+.eleccion:hover:not(:disabled) { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--borde); background: var(--resalta); color: #1b2a49; }
+.eleccion:active:not(:disabled) { transform: translate(3px, 3px); box-shadow: 1px 1px 0 var(--borde); }
+.eleccion:disabled { opacity: .55; cursor: wait; }
+.eleccion__emoji { font-size: clamp(2.4rem, 8vw, 3.6rem); line-height: 1.1; }
+.eleccion__texto { font-weight: 800; font-size: 1.05rem; }
+.eleccion kbd { font-size: .75rem; color: inherit; background: transparent; }
+
+.ronda-extra { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+.historial-ppt { list-style: none; padding: 0; margin: 0; display: flex; gap: .5rem; flex-wrap: wrap; }
+.historial-ppt li { width: 2.4rem; height: 2.4rem; display: grid; place-items: center; font-weight: 800; border: 2px solid var(--borde); border-radius: 50%; color: #1b2a49; }
+.historial-ppt .g { background: #9be8c5; } .historial-ppt .p { background: #ffb3a7; } .historial-ppt .e { background: #dfe5f2; }
+.reglas { margin: 0; color: var(--suave); font-size: .95rem; }
+@media (max-width: 560px) {
+  .mesa { grid-template-columns: 1fr 1fr; }
+  .versus { display: none; }
+  .elecciones { gap: .6rem; }
+}

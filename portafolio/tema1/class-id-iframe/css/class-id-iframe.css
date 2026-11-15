@@ -1,0 +1,23 @@
+/* Ejercicios: etiquetas class, id e iframe */
+.libro { font-family: Georgia, "Times New Roman", serif; }
+.titulo-cap { margin: 0; padding: .9rem 0; text-align: center; background: #5de2e7 url("../../../img/patron.svg") center / 30px repeat;
+  font: italic 700 .95rem Arial, Helvetica, sans-serif; color: #111; }
+.titulo-cap span { background: #5de2e7; padding: .2rem .5rem; }
+.libro p { margin: 0; padding: .8rem 1rem; font-size: .8rem; font-weight: 700; line-height: 1.45; }
+.destacado { font: 700 1.05rem Arial, Helvetica, sans-serif; border: 2px solid #2323c8; padding: 0 2px; background: #fff; }
+#cap1 { margin-bottom: 1rem; }
+#cap1 p { background: #d4f8c4; color: #111; }
+#cap2 { margin-bottom: 1rem; }
+#cap2 p { background: #f4d070; color: #111; margin-inline: 1.5rem; }
+#cap2 .destacado { background: transparent; border-color: #2323c8; text-decoration: underline; }
+#cap3 p { background: #5b16f2; color: #fff; border-radius: 12px; margin-inline: 2rem; padding: 1rem 1.2rem; }
+
+.demo-iframes { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+.demo-iframes iframe { width: 100%; height: 300px; border: 1px solid #c9c9c9; background: #fff; }
+.demo-iframes .ancho { grid-column: 1 / -1; }
+.cargar { margin: 0; }
+.cargar button { cursor: pointer; font: inherit; font-size: .8rem; color: #fff; background: #2fe06a; border: 0; padding: 1rem 1.3rem; transition: background-color .2s, transform .2s; }
+.cargar button:hover { background: #1ebf55; transform: translateY(-2px); }
+.aviso { font-size: .85rem; color: #555; margin: .5rem 0 0; }
+.aviso a { color: #1b4fd0; }
+@media (max-width: 700px) { .demo-iframes { grid-template-columns: 1fr; } }

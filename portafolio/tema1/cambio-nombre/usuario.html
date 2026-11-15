@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Usuario">
+  <title>Usuario</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/cambio-nombre.css">
+  <script src="../../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-current="page" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="principal.html">Principal</a><a href="video.html">Vídeo</a><a href="usuario.html" aria-current="page">Usuario</a><a href="cambio.html">Cambio de nombre</a><a href="final.html">Final</a></nav>
+  <main id="contenido" class="contenedor principal">
+
+    <div class="lienzo app">
+      <!-- La contraseña no lleva atributo name: así no viaja en la dirección al enviar con GET. -->
+      <form action="cambio.html" method="get">
+        <fieldset>
+          <legend>Datos del usuario</legend>
+          <div class="fila"><label for="u-nombre">Nombre:</label><input type="text" id="u-nombre" name="nombre" autocomplete="given-name" required></div>
+          <div class="fila"><label for="u-apellidos">Apellidos:</label><input type="text" id="u-apellidos" name="apellidos" autocomplete="family-name" required></div>
+          <div class="fila"><label for="u-fecha">Fecha de nacimiento:</label><input type="date" id="u-fecha" name="nacimiento" required></div>
+          <div class="fila"><label for="u-email">Email:</label><input type="email" id="u-email" name="email" autocomplete="email" required></div>
+          <div class="fila"><label for="u-clave">Contraseña:</label><input type="password" id="u-clave" autocomplete="new-password" required></div>
+        </fieldset>
+        <div class="botones">
+          <button type="submit">Enviar</button>
+          <button type="reset">Restablecer</button>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

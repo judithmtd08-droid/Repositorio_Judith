@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ejercicio 3 · Listas y bloques">
+  <title>Ejercicio 3 · Listas y bloques</title>
+  <link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+  <script>(function(){try{var t=localStorage.getItem('tema');if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)t='oscuro';if(t)document.documentElement.setAttribute('data-tema',t);if(window.self!==window.top)document.documentElement.classList.add('embebida');}catch(e){}})();</script>
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="css/listas-bloques.css">
+  <script src="../../js/site.js" defer></script>
+</head>
+<body>
+  <a class="salto" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+  <div class="cabecera__fila contenedor">
+    <a class="marca" href="../../index.html"><span class="marca__sig" aria-hidden="true">&lt;/&gt;</span>Portafolio LMSGI</a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal"><ul><li><a href="../../index.html">Inicio</a></li><li><a href="../../horario/horario.html">Horario</a></li><li><a href="../../formulario/formulario.html">Formulario</a></li><li class="tiene-sub"><a href="../../tema1/formato-texto/ejercicio1.html" aria-current="page" aria-haspopup="true">Tema 1</a><ul class="sub"><li><a href="../../tema1/formato-texto/ejercicio1.html">Formato del texto y tablas</a></li><li><a href="../../tema1/listas-bloques/ejercicio1.html">Listas, menús y bloques</a></li><li><a href="../../tema1/class-id-iframe/ejercicio1.html">Class, id e iframe</a></li><li><a href="../../tema1/cambio-nombre/principal.html">Cambio de nombre</a></li></ul></li><li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li><li class="tiene-sub"><a href="../../tema3/calculadora/calculadora.html" aria-haspopup="true">Tema 3</a><ul class="sub"><li><a href="../../tema3/calculadora/calculadora.html">Calculadora</a></li><li><a href="../../tema3/piedra-papel-tijera/juego.html">Piedra, papel o tijera</a></li></ul></li></ul></nav>
+    <button class="tema-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">◐</button>
+  </div>
+</header>
+  <nav class="subnav contenedor" aria-label="Páginas de esta sección"><a href="ejercicio1.html">Ejercicio 1</a><a href="ejercicio2.html">Ejercicio 2</a><a href="ejercicio3.html" aria-current="page">Ejercicio 3</a></nav>
+  <main id="contenido" class="contenedor principal">
+<section class="ficha contenedor"><h1><span>Ejercicio 3: div y span</span></h1><p>Bloques con div y texto en línea con span.</p></section>
+
+    <div class="lienzo" style="padding:0">
+      <div class="e3">
+        <div class="bloque">
+          <h2>bloque div</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam tempor diam et accumsan. Vestibulum varius, sapien ut dignissim interdum, lorem risus lacinia enim, in mattis enim urna et sem. Suspendisse ligula lorem, egestas finibus tellus sit amet, finibus posuere tellus. Mauris tempus dictum consequat. Etiam eu dapibus ante. Sed at eros at sapien porttitor interdum nec nec leo. Donec quis venenatis nisl. Nulla eget nunc nisl. Sed suscipit metus eget orci aliquam lacinia ac id urna.</p>
+          <p>Sed non feugiat lorem. Praesent porttitor risus in consequat sagittis. Maecenas ut magna interdum, euismod eros quis, blandit neque. Ut rhoncus, magna eget tincidunt pellentesque.</p>
+        </div>
+        <div class="bloque-claro">
+          <p>Lorem ipsum dolor sit amet, <span class="rosa">consectetur adipiscing elit.</span> <span class="negro">Vivamus nec libero dignissim</span>, consequat ex at, placerat velit. In accumsan ornare leo, <span class="cursiva">eget pulvinar nunc accumsan sed. Vestibulum dictum ante vel orci commodo posuere eu ultrices nisi.</span> Praesent sed venenatis ligula. Aenean ac congue sem, sit amet tincidunt sem. Nullam magna sapien, consequat in euismod et, volutpat vel lacus. Sed in pellentesque nunc. Praesent ullamcorper purus ut mollis semper. Aenean bibendum eros ut tellus pretium dignissim.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer class="pie">
+  <div class="pie__fila contenedor">
+    <p class="pie__marca"><strong>Portafolio LMSGI</strong><br>Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+    <ul class="pie__enlaces">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../../horario/horario.html">Horario</a></li>
+      <li><a href="../../formulario/formulario.html">Formulario</a></li>
+      <li><a href="../../tema2/laboratorio-css/laboratorio.html">Tema 2</a></li>
+      <li><a href="../../tema3/calculadora/calculadora.html">Tema 3</a></li>
+    </ul>
+    <p class="pie__nota">© <span data-anio>2026</span> Judith · HTML, CSS y JavaScript</p>
+  </div>
+</footer>
+</body>
+</html>

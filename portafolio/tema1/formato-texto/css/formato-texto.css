@@ -1,0 +1,32 @@
+/* Ejercicios: formato del texto, hipervínculos y tablas */
+.e1 { border: 1px solid #2f5fd0; padding: .5rem 1rem 0; font-family: "Times New Roman", Times, serif; background: #fff; }
+.e1 h1 { font-size: 1.35rem; margin: .2rem 0; }
+.e1 h2 { color: #e11616; font-style: italic; font-size: .95rem; margin: .3rem 0; }
+.e1 .icono { display: block; margin: .4rem auto; width: 120px; }
+.e1 .parrafo { font-family: Verdana, Geneva, sans-serif; font-size: 30px; line-height: 1.25; margin: 1.4rem 0 1rem; }
+.e1 mark { background: #ffff00; }
+.e1 hr { border: 0; border-top: 1px solid #888; margin: 0; }
+.e1 .enlace-caja { border: 2px solid #2323c8; background: #dcdff7; font-size: .72rem; padding: 1px 4px; margin: 0; }
+
+.e2 { position: relative; min-height: 440px; padding: 1rem; font-family: "Times New Roman", Times, serif;
+  background: #fff url("../../../img/flor.svg") center / cover no-repeat; }
+.e2 h4 { color: #e8321a; text-align: center; margin: 0 0 .8rem; font-size: 1.1rem; }
+.e2 h4 sub { background: #ffff00; color: #000; font-size: .7rem; padding: 0 3px; }
+.e2 .btn-amarillo { display: inline-block; background: #f2c200; color: #fff; padding: .55rem .8rem; font-size: .72rem; text-decoration: none; transition: background-color .2s, transform .2s; }
+.e2 .btn-amarillo:hover { background: #d9a900; transform: translateY(-2px); }
+.e2 pre { font-family: "Courier New", monospace; font-size: .65rem; text-align: center; width: 9rem; margin: .8rem 0; }
+.e2 .linea-google { font-size: .75rem; display: flex; align-items: center; gap: 0; margin: 1.2rem 0 5.5rem; }
+.e2 .linea-google sup { font-weight: 700; margin-right: .3rem; }
+.e2 .capitulo4 { background: #6495ed; border: 2px solid #000; padding: .3rem .6rem; font-size: .75rem; text-align: center; }
+.e2 .capitulo4 a { display: inline-block; background: #fff; color: #000; font-size: .6rem; padding: 1px 6px; margin-bottom: .1rem; text-decoration: none; }
+.e2 .capitulo4 h3 { margin: 0; font-size: .75rem; }
+
+.tablas { display: grid; gap: 1.6rem; justify-items: center; font-family: "Times New Roman", Times, serif; }
+.tablas caption { font-style: italic; padding-bottom: .3rem; }
+.t1 { border: 3px solid #2323d6; border-spacing: 8px; padding: 10px; background: #fff; }
+.t1 th { font-weight: 700; padding: .2rem .5rem; }
+.t1 td { border: 2px solid #2323d6; padding: .8rem 1.1rem; }
+.t2 { border-collapse: collapse; border: 3px solid #e2b600; width: min(100%, 720px); text-align: center; background: #fff; }
+.t2 th, .t2 td { border: 2px solid #e2b600; background: #dcdcdc; padding: 1.1rem .6rem; }
+.t2 tr.verde td { background: #9acd32; }
+.t2 td:hover { filter: brightness(1.06); }
